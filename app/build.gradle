@@ -28,11 +28,17 @@ dependencies {
     // https://mvnrepository.com/artifact/org.apache.flink/flink-core
     implementation group: 'org.apache.flink', name: 'flink-core', version: '1.5.0'
 // https://mvnrepository.com/artifact/org.apache.flink/flink-connector-kafka
-    implementation group: 'org.apache.flink', name: 'flink-connector-kafka_2.12', version: '1.11.0'
+    implementation group: 'org.apache.flink', name: 'flink-connector-kafka', version: '1.15.0'
+
 // https://mvnrepository.com/artifact/org.apache.flink/flink-streaming-java
-    compileOnly group: 'org.apache.flink', name: 'flink-streaming-java_2.11', version: '1.5.0'
+    implementation group: 'org.apache.flink', name: 'flink-streaming-java', version: '1.15.0'
+// https://mvnrepository.com/artifact/org.apache.flink/flink-java
+    implementation group: 'org.apache.flink', name: 'flink-java', version: '1.15.0'
+
 // https://mvnrepository.com/artifact/com.fasterxml.jackson.datatype/jackson-datatype-jsr310
     implementation group: 'com.fasterxml.jackson.datatype', name: 'jackson-datatype-jsr310', version: '2.9.8'
+// https://mvnrepository.com/artifact/org.apache.flink/flink-clients
+    implementation group: 'org.apache.flink', name: 'flink-clients', version: '1.15.0'
 
 }
 
