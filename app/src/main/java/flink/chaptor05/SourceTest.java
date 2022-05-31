@@ -53,7 +53,7 @@ public class SourceTest {
 //        stream4.print("4");
         // 4.read from kafka
         Properties properties = new Properties();
-        properties.setProperty("bootstrap.servers","localhost:9092");
+        properties.setProperty("bootstrap.servers","172.31.108.227:9092");
         properties.setProperty("group.id","consumer-group");
         properties.setProperty("key.deserializer","org.apache.kafka.common.serialization.StringDeserializer");
         properties.setProperty("value.deserializer","org.apache.kafka.common.serialization.StringDeserializer");
