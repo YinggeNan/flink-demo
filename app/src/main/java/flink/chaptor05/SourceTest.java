@@ -51,8 +51,9 @@ public class SourceTest {
          // need to use "nc -lk 7777" to print msg through socket before launch the app
 //        DataStreamSource<String> stream4 = env.socketTextStream("localhost", 7777);
 //        stream4.print("4");
-        // 4.read from kafka
+        // 5.read from kafka
         Properties properties = new Properties();
+        // 172.31.108.227 is the wsl instance ip
         properties.setProperty("bootstrap.servers","172.31.108.227:9092");
         properties.setProperty("group.id","consumer-group");
         properties.setProperty("key.deserializer","org.apache.kafka.common.serialization.StringDeserializer");
